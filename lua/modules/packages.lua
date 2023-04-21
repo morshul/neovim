@@ -19,7 +19,9 @@ packages.create_capabilities = function()
 end
 
 packages.synchronize = function()
-  manager.setup({})
+  manager.setup({
+    require('modules.packages.ui.rose-pine'),
+  })
 end
 
 return packages
