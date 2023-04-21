@@ -5,6 +5,9 @@ _G.vndtta = {
   modules = {
     packages = require('modules.packages'),
   },
+  utils = {
+    icons = require('utils.icons'),
+  },
 }
 
 vndtta.core.profiles.load('default')
