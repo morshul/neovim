@@ -22,6 +22,7 @@ packages.synchronize = function()
   manager.setup({
     require('modules.packages.ui.rose-pine'),
     require('modules.packages.tooling.nvim-tree'),
+    require('modules.packages.tooling.legendary-nvim'),
   })
 end
 
