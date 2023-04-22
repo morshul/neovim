@@ -134,6 +134,10 @@ Keybind.non_blocking = function(self)
   return self
 end
 
+---Builds the keybind.
+---
+---@param self vndtta.input.Keybind The object itself.
+---@return table keybind The keybind.
 Keybind.build = function(self)
   return {
     self.keymap,
