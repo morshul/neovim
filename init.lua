@@ -1,5 +1,8 @@
 _G.vndtta = {
   core = {
+    helpers = {
+      dependencies = require('core.helpers.dependencies'),
+    },
     profiles = require('core.profiles'),
   },
   modules = {
