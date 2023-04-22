@@ -25,6 +25,7 @@ packages.synchronize = function()
     require('modules.packages.ui.lualine-nvim'),
     require('modules.packages.ui.bufferline-nvim'),
     require('modules.packages.ui.indent-blankline-nvim'),
+    require('modules.packages.ui.noice-nvim'),
     require('modules.packages.tooling.nvim-tree'),
     require('modules.packages.tooling.legendary-nvim'),
     require('modules.packages.treesitter.nvim-treesitter'),
