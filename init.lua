@@ -10,6 +10,8 @@ _G.vndtta = {
   },
 }
 
+_G.Keybind = require('core.keybind')
+
 vndtta.core.profiles.load('default')
 
 vndtta.modules.packages.create_capabilities()
