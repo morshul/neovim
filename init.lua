@@ -19,3 +19,6 @@ vndtta.core.profiles.load('default')
 
 vndtta.modules.packages.create_capabilities()
 vndtta.modules.packages.synchronize()
+
+require('shared.keymaps.general')
+require('shared.keymaps.file-explorer')

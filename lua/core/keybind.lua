@@ -11,6 +11,7 @@
 ---@field private mode vndtta.input.VimMode
 ---@field private callback function | string
 ---@field private description string
+---@field private buffer boolean
 ---@field private options table
 ---@field private options.noremap boolean
 ---@field private options.silent boolean
@@ -76,7 +77,7 @@ end
 Keybind.with_buffer = function(self, buffer)
   assert(type(buffer) == 'number', 'The buffer must be a boolean or a number')
 
-  self.buffer = buffer
+  self.options.buffer = buffer
 
   return self
 end
@@ -137,15 +138,8 @@ end
 ---Builds the keybind.
 ---
 ---@param self vndtta.input.Keybind The object itself.
----@return table keybind The keybind.
 Keybind.build = function(self)
-  return {
-    self.keymap,
-    self.callback,
-    mode = { self.mode },
-    options = self.options,
-    description = self.description,
-  }
+  vim.keymap.set(self.mode, self.keymap, self.callback, self.options)
 end
 
 ---Creates a new keybind builder.
